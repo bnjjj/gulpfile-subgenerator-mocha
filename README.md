@@ -6,6 +6,7 @@
 
 #Tasks generated
 + gulp mocha
++ gulp mocha:watch
 
 #Contributing
 + In the templates directory you'll see all of the task code about mocha
