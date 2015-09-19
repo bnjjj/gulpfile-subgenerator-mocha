@@ -14,17 +14,17 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
     self.prompt([{
       type: 'value',
       name: 'src',
-      message: 'What is your relative directory path for your test files of js (mocha) ?',
+      message: 'What is the relative path to your js test files (mocha)?',
       default: './app/**/*.spec.js'
     }, {
       type: 'value',
       name: 'srcWatch',
-      message: 'What is your relative directory path for watching and launch testing (mocha) ?',
+      message: 'What is the relative path to the files for watching and launch testing (mocha)?',
       default: './app/**/*.js'
     }, {
       type: 'value',
       name: 'notify',
-      message: 'Do you want to be notify (growl) when you have an error in your tests (mocha) ?',
+      message: 'Do you want to be notified (growl) when you have an error in your tests (mocha)?',
       default: 'yes'
     }], function (answers) {
       answers.concat = answers.notify.indexOf('no') !== -1 ? false : true;
