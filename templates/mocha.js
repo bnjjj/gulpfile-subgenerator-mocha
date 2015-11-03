@@ -11,5 +11,6 @@ gulp.task('mocha', function () {
 });
 
 gulp.task('mocha:watch', function () {
+  gulp.start('mocha');
   gulp.watch('<%= srcWatch %>', ['mocha']);
 });
